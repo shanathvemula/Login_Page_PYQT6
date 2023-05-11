@@ -155,8 +155,19 @@ class Ui_MainWindow(object):
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Close).clicked.connect(self.closeEvent)
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Save).clicked.connect(self.LoginEvent)
         self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Save).setText("Login")
+        self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Save).setStyleSheet("background-image: url();\n"
+                                                                                            "background-color: rgb(74,159,188);\n"
+                                                                                            "padding: 5px 18px 5px 18px;\n"
+                                                                                            "border-radius: 5px;")
+        self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Close).setStyleSheet("background-image: url();\n"
+                                                                                            "background-color: rgb(138, 136, 132);\n"
+                                                                                            "padding: 5px 18px 5px 18px;\n"
+                                                                                            "border-radius: 5px;")
+        self.buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Save)
         self.buttonBox.setObjectName("buttonBox")
         self.horizontalLayout_6.addWidget(self.buttonBox, 0, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        self.horizontalLayout_6.setSpacing(0)
+        # self.horizontalLayout_6.setStretch(5,5)
         self.verticalLayout.addWidget(self.widget_6, 0, QtCore.Qt.AlignmentFlag.AlignTop)
         self.horizontalLayout_2.addWidget(self.widget_3, 0, QtCore.Qt.AlignmentFlag.AlignHCenter|QtCore.Qt.AlignmentFlag.AlignTop)
         self.horizontalLayout.addWidget(self.widget)
